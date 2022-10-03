@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {  /*リンクの下の線が表示されないため必要ない*/
+  text-decoration: none;
+}
+
+.main-visual {
+  width: 100%;
+  height: 400px;
+  background-image: url(img/mv.jpg);
+  background-size: contain;　/*containではなくcover*/
+  background-position: bottom; /*centerではなくbottom*/
+}
+
+.main-visual-text {
+  padding: 20px 0 0 20px; /*後ろ３つはいらない*/
+}
+
+main {
+  width: 840px;
+  display: flex;　/*ここで縦並びにする必要はないのでいらない*/
+  justify-content: center;　/*上と同じ理由*/
+  margin: 0 auto; /*上下に余白がいるため0ではなく50*/
+  padding: 50px 0;　/*余白は必要ないためいらない*/
+}
+.content {
+  padding-bottom: 50px; /*50ではなく30*/
+  margin-bottom: 20px; /*20ではなく30*/
+  border-bottom: 1px solid #f7f7f7;
+  display: flex; /*いらない記述*/
+  justify-content: flex-start; /*いらない記述*/
+}
+
+.content-text { /*いらない記述*/
+
+}
+.link { /*いらない記述*/
+  border-bottom: solid 1px gray;
+}
